@@ -10,3 +10,10 @@ Graphics Editor similar to (paint)
                 and all its requirements
 
 link for download https://www.khronos.org/opengl/wiki/Getting_Started#Downloading_OpenGL
+
+
+
+
+
+## The first window will look like
+![alt text](http://https://github.com/Sanketwable/Graphics_Project/Images/firstpage.png)
