@@ -16,7 +16,11 @@ link for download https://www.khronos.org/opengl/wiki/Getting_Started#Downloadin
 
 
 ## The first window will look like
+<<<<<<< HEAD
 <p align="center">
   <img src="https://github.com/Sanketwable/Graphics_Project/blob/master/Images/firstpage.png" width="350" title="hover text">
   <img src="https://github.com/Sanketwable/Graphics_Project/blob/master/Images/firstpage.png" width="350" alt="accessibility text">
 </p>
+=======
+![alt text](https://github.com/Sanketwable/Graphics_Project/blob/master/Images/firstpage.png)
+>>>>>>> 8601e18ec61d3cadd48de6f612ec29fcafcab784
