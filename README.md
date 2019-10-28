@@ -2,11 +2,7 @@
 Graphics Editor similar to (paint)
 # Requirements
  1. Frameworks - 
-<<<<<<< HEAD
-
-=======
  
->>>>>>> d0d83ed76805eecf258f41463135217a4ef8317c
                 1.OpenGL framework
                 2.Glut Framework
                 
