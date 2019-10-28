@@ -4,7 +4,6 @@ Graphics Editor similar to (paint)
  1. Frameworks - 
  
                 1.OpenGL framework
-                
                 2.Glut Framework
                 
 
@@ -13,9 +12,8 @@ Graphics Editor similar to (paint)
                 1.Glut.h
                 and all its requirements
 
+
 link for download https://www.khronos.org/opengl/wiki/Getting_Started#Downloading_OpenGL
-
-
 
 
 
