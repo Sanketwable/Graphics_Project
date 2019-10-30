@@ -22,5 +22,3 @@ link for download https://www.khronos.org/opengl/wiki/Getting_Started#Downloadin
 <p align="center">
   <img src="https://github.com/Sanketwable/Graphics_Project/blob/master/Images/firstpage.png" width="600" title="hover text">
 </p>
-
-H
