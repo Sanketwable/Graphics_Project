@@ -11,5 +11,3 @@ float a[100][2],b[100][2],textx,texty,textz=0.0,a1=0,a2=0,a3=0,b1=0,b2=0,b3=0,po
 
 char* image;
 
-void *currentfont;
-

@@ -2,17 +2,17 @@
 #include<GL/glut.h>
 #include<math.h>
 #include "display.cpp"
-#include "constant.cpp"
+#include "variables.cpp"
+
 using namespace std;
+
+
 
 
 FILE *fptr;
 char fname[20];
 int s=0,wel=0;
 
-void drawstring(float x,float y,float z,char *string);
-
-void setFont(void *font);
 
 void drawpoint(int x, int y);
 
@@ -52,17 +52,26 @@ void point_size(int id);
 
 void right(int id);
 
+
+void addBackgroundImage() {
+  
+}
+
 int main(int argc, char **argv) {
     
-    image = new char[3*1450*900*sizeof(char];
+    image = new char[3*1450*900*sizeof(char)];
     
     glutInit(&argc,argv);
     glutInitDisplayMode(GLUT_SINGLE| GLUT_RGB);
     glutInitWindowPosition(100,100);
-    glutInitWindowSize(ww,wh);
+    glutInitWindowSize(800,600);
     glutCreateWindow("G-Edit --Wable Sanket--Avinash Yadav--Shubhang Bhagat");
+
     glutDisplayFunc(display);
+    //glutMouseFunc(myMouse);
+    //glutKeyboardFunc(keys);
     glutMainLoop();
+    return(0);
 
 
 }
