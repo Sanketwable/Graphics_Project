@@ -65,7 +65,7 @@ int main(int argc, char **argv) {
     glutInitDisplayMode(GLUT_SINGLE| GLUT_RGB);
     glutInitWindowPosition(100,100);
     glutInitWindowSize(800,600);
-    glutCreateWindow("G-Edit --Wable Sanket--Avinash Yadav--Shubhang Bhagat");
+    glutCreateWindow("G-Editor --Wable Sanket--Avinash Yadav--Shubhang Bhagat");
 
     glutDisplayFunc(display);
     //glutMouseFunc(myMouse);
