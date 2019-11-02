@@ -1,5 +1,5 @@
 #include<iostream>
-#include<GL/glut.h>
+#include<GL/glut.h>//glut
 #include<math.h>
 #include "display.cpp"
 #include "variables.cpp"
