@@ -2,10 +2,14 @@
 #include<GL/glut.h>
 #include<GL/freeglut.h>
 #include<string.h>
+#include<GL/gl.h>
+
 using namespace std;
 
 void *currentfont;
 extern int wel,wh;
+
+
 
 void setFont(void *font)
 {
@@ -23,13 +27,11 @@ void drawstring(float x,float y,float z,const char *string)
 	}
 }
 
-void display() {
-    glClearColor(1.0, 1.0, 1.0, 1.0);
+void First_page() {
+
+    glClearColor(0.0,0.0,0.0,1.0);
     glClear(GL_COLOR_BUFFER_BIT);
-    glLoadIdentity();
-    if (wel==0||wel==1) {
-        glClearColor(0.0,0.0,0.0,1.0);
-    glClear(GL_COLOR_BUFFER_BIT);
+
     
     setFont(GLUT_BITMAP_HELVETICA_18);
     glColor3f(0,1,1);
@@ -49,6 +51,15 @@ void display() {
     drawstring(0.4,-0.65,0.0,"Under the guidance of");
     setFont(GLUT_BITMAP_TIMES_ROMAN_24);
     drawstring(0.4,-0.8,0.0,"Dr. Naveen Chauhan");
+    
+}
+
+void display() {
+    glClearColor(1.0, 1.0, 1.0, 1.0);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glLoadIdentity();
+    if (wel==0||wel==1) {
+        First_page();
     }
     glFlush();
     glClearColor(1.0,1.0,1.0,1.0);

@@ -3,6 +3,7 @@
 #include<math.h>
 #include "display.cpp"
 #include "variables.cpp"
+#include "mouse.cpp"
 
 using namespace std;
 
@@ -44,7 +45,7 @@ void detect_point(GLint num1, GLint num2, int x, int y);
 
 void keys(unsigned char key, int x, int y);
 
-void myMouse(int btn, int state, int x, int  y);
+
 
 void myReshape(GLsizei w,GLsizei h);
 
@@ -68,7 +69,7 @@ int main(int argc, char **argv) {
     glutCreateWindow("G-Editor --Wable Sanket--Avinash Yadav--Shubhang Bhagat");
 
     glutDisplayFunc(display);
-    //glutMouseFunc(myMouse);
+    glutMouseFunc(myMouse);
     //glutKeyboardFunc(keys);
     glutMainLoop();
     return(0);
