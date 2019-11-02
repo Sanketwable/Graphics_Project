@@ -4,9 +4,11 @@
 
 using namespace std;
 
+int constant1=0;
+extern int wel;
 
 
-void myMouse(int btn, int state, int x, int  y) {
+void myMouse(int button, int state, int x, int  y) {
 
     GLfloat r,r1,r2;
     int num1=0,num2=0;
@@ -15,12 +17,15 @@ void myMouse(int btn, int state, int x, int  y) {
     int flag2;
 
 
-    if (btn==GLUT_LEFT_BUTTON && state==GLUT_DOWN) {
-        if (wel==1) {
-            wel=2;
-            display();
-        }
+    if (button==GLUT_LEFT_BUTTON && state==GLUT_DOWN) {
+
+        if (wel==1)
+        Second_page();
+        else if (wel==2)
+        Third_page();
+
     }
+
 
 
 

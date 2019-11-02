@@ -12,7 +12,7 @@ using namespace std;
 
 FILE *fptr;
 char fname[20];
-int s=0,wel=0;
+
 
 
 void drawpoint(int x, int y);
@@ -65,7 +65,7 @@ int main(int argc, char **argv) {
     glutInit(&argc,argv);
     glutInitDisplayMode(GLUT_SINGLE| GLUT_RGB);
     glutInitWindowPosition(100,100);
-    glutInitWindowSize(800,600);
+    glutInitWindowSize(1000,800);
     glutCreateWindow("G-Editor --Wable Sanket--Avinash Yadav--Shubhang Bhagat");
 
     glutDisplayFunc(display);

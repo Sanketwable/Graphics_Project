@@ -4,10 +4,13 @@
 #include<string.h>
 #include<GL/gl.h>
 
+
 using namespace std;
 
 void *currentfont;
-extern int wel,wh;
+extern int wel,wh,constant1;
+extern float posx,posy;
+extern char *image;
 
 
 
@@ -47,22 +50,51 @@ void First_page() {
     glColor3f(0.5,0.5,1.0);
     drawstring(-0.5,-0.2,0.0,"Computer Science and Engineering Department");
     drawstring(-0.2,-0.3,0.0,"NIT Hamirpur");
-    glColor3f(1.0,1.0,1.0);
-    drawstring(0.4,-0.65,0.0,"Under the guidance of");
-    setFont(GLUT_BITMAP_TIMES_ROMAN_24);
-    drawstring(0.4,-0.8,0.0,"Dr. Naveen Chauhan");
     
+
+    glFlush();
+
+     wel=1;
+}
+
+
+
+void Second_page() {
+
+    glClearColor(0.1, 0.1, 0.1, 1.0);
+    glClear(GL_COLOR_BUFFER_BIT);
+
+    setFont(GLUT_BITMAP_8_BY_13);
+    glColor3f(1.0,1.0,1.0);
+    drawstring(-0.2,0.15,0.0,"Under the guidance of");
+    setFont(GLUT_BITMAP_9_BY_15);
+    drawstring(-0.2,0.0,0.0,"Dr. Naveen Chauhan");
+
+    glFlush();
+    wel=2;
+
+
+}
+
+
+void Third_page() {
+
+    glClearColor(1.0,1.0,1.0,1.0);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glDrawBuffer(GL_FRONT);
+    glRasterPos2f(0.5,0.5);
+    glDrawPixels(5,5,GL_RGB,GL_UNSIGNED_BYTE,image);
+
+    setFont(GLUT_BITMAP_8_BY_13);
+    glColor3f(0.2,0.3,0.4);
+    drawstring(0.0,0.0,0.0,"Now editor will be here");
+
+    glFlush();
+
 }
 
 void display() {
-    glClearColor(1.0, 1.0, 1.0, 1.0);
-    glClear(GL_COLOR_BUFFER_BIT);
-    glLoadIdentity();
-    if (wel==0||wel==1) {
-        First_page();
-    }
-    glFlush();
-    glClearColor(1.0,1.0,1.0,1.0);
-    glClear(GL_COLOR_BUFFER_BIT);
+   
+    First_page();
 
 }
