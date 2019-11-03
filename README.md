@@ -26,11 +26,11 @@ link for download https://www.khronos.org/opengl/wiki/Getting_Started#Downloadin
 ## The Second Third will look like
 
 <p align="center">
-  <img src="https://github.com/Sanketwable/Graphics_Project/blob/master/Images/secondpage.png> width="600 title="hover text">
+  <img src="https://github.com/Sanketwable/Graphics_Project/blob/master/Images/secondpage.png" width ="600" title="hover text">
 </p>
 
 ## The Third page will look like 
 
 <p align="center">
-  <img src="https://github.com/Sanketwable/Graphics_Project/blob/master/Images/thirdpage.png> width="600 title="hover text">
+  <img src="https://github.com/Sanketwable/Graphics_Project/blob/master/Images/thirdpage.png" width="600" title="hover text">
 </p>
