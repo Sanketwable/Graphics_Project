@@ -3,6 +3,7 @@
 #include<GL/freeglut.h>
 #include<string.h>
 #include<GL/gl.h>
+#include "elements.cpp"
 
 
 using namespace std;
@@ -82,12 +83,12 @@ void Third_page() {
     glClearColor(1.0,1.0,1.0,1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     glDrawBuffer(GL_FRONT);
-    glRasterPos2f(0.5,0.5);
-    glDrawPixels(5,5,GL_RGB,GL_UNSIGNED_BYTE,image);
+    glRasterPos2f(0.0,0.0);
+    glDrawPixels(10,10,GL_RGB,GL_UNSIGNED_BYTE,image);
 
-    setFont(GLUT_BITMAP_8_BY_13);
-    glColor3f(0.2,0.3,0.4);
-    drawstring(0.0,0.0,0.0,"Now editor will be here");
+    
+
+    Elements();
 
     glFlush();
 
@@ -95,6 +96,7 @@ void Third_page() {
 
 void display() {
    
-    First_page();
 
+    First_page();
+    
 }

@@ -4,6 +4,7 @@
 #include "display.cpp"
 #include "variables.cpp"
 #include "mouse.cpp"
+#include "keyboard.cpp"
 
 using namespace std;
 
@@ -23,7 +24,6 @@ void eraser(int x , int y);
 
 void reset();
 
-void palette(float x1, float y1, float x2, float y2, float x3 , float y3, float x4, float y4);
 
 void draw_pixel(GLfloat x, GLfloat y);
 
@@ -43,7 +43,7 @@ void scanfill(GLint num1, GLint num2);
 
 void detect_point(GLint num1, GLint num2, int x, int y);
 
-void keys(unsigned char key, int x, int y);
+
 
 
 
@@ -70,7 +70,7 @@ int main(int argc, char **argv) {
 
     glutDisplayFunc(display);
     glutMouseFunc(myMouse);
-    //glutKeyboardFunc(keys);
+    glutKeyboardFunc(keyboard);
     glutMainLoop();
     return(0);
 
