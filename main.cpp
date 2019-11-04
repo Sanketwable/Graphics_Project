@@ -5,6 +5,7 @@
 #include "variables.cpp"
 #include "mouse.cpp"
 #include "keyboard.cpp"
+#include "draw.cpp"
 
 using namespace std;
 
@@ -25,17 +26,14 @@ void eraser(int x , int y);
 void reset();
 
 
-void draw_pixel(GLfloat x, GLfloat y);
 
-void plotpixels(GLfloat p, GLfloat q, GLfloat x, GLfloat y);
 
-void draw_circle(GLfloat p , GLfloat q , GLfloat r);
 
-void draw_pixel1(GLfloat x, GLfloat y);
 
-void plotpixels1(GLfloat p, GLfloat q, GLfloat x, GLfloat y);
 
-void draw_circle(GLfloat p, GLfloat q,  GLfloat r);
+
+
+
 
 void edgedetect(float x1, float y1, float x2, float y2, int *le, int *re);
 

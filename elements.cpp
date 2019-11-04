@@ -5,6 +5,7 @@ using namespace std;
 
 extern void setFont(void *font);
 extern void drawstring(float x,float y,float z,const char *string);
+extern void drawCircle(float cx, float cy, float r, int num_segments);
 
 extern int wh, ww, wx, wy, wx1, wy1;
 
@@ -181,8 +182,61 @@ void Elements() {
 
     glColor3f(0.0,0.0,0.4);
         palette(-0.92,-0.90,-0.87,-0.90,-0.87,-0.85,-0.92,-0.85);
-    
 
+
+    //Drawing elements in tool bar eg,pen, pencil,triangle,eraser...etc
+
+
+    glColor3f(0.0,0.0,0.0);   //line
+    glBegin(GL_LINES);
+        glVertex2f(-0.90,0.79);
+        glVertex2f(-0.94,0.73);
+    glEnd();
+    
+    glBegin(GL_LINE_LOOP);    //triangle
+        glVertex2f(-0.87,0.73);
+        glVertex2f(-0.83,0.73);
+        glVertex2f(-0.85,0.79);
+    glEnd();
+
+    glBegin(GL_LINE_LOOP);                          /* RECTANGLE OPTION */
+		glVertex2f(-0.94,0.70);
+		glVertex2f(-0.90,0.70);
+		glVertex2f(-0.90,0.64);
+		glVertex2f(-0.94,0.64);
+	glEnd();
+
+    glBegin(GL_TRIANGLES);                          /*PENCIL OPTION*/
+		glVertex2f(-0.87,0.64);
+		glVertex2f(-0.85,0.64);
+		glVertex2f(-0.87,0.66);
+	glEnd();
+
+	glBegin(GL_LINE_LOOP);
+		glVertex2f(-0.85,0.64);
+		glVertex2f(-0.83,0.68);
+		glVertex2f(-0.85,0.70);
+		glVertex2f(-0.87,0.66);
+	glEnd();
+
+    glColor3f(1, 1, 1);
+	glBegin(GL_QUADS);                              /* ERASER*/
+		glVertex2f(-0.94,0.61);
+		glVertex2f(-0.90,0.61);
+		glVertex2f(-0.90,0.57);
+		glVertex2f(-0.94,0.57);
+	glEnd();
+
+      
+      
+    for(int i=0;i<40;i++)					             /* to draw AIR BRUSH OPTION on tool bar */
+				 {
+                     int j=rand()%15;
+					 int k=rand()%15;
+					 glBegin(GL_POINTS);
+					 glVertex2f(-0.92+j,0.59-k);
+					 glEnd();
+                 }
 
     
 }
