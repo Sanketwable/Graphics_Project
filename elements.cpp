@@ -70,7 +70,7 @@ void Elements() {
     drawstring(-0.40,0.90,0.0,"COLOR"); 
     drawstring(-0.26 ,0.90,0.0,"HELP");  
 
-    glColor3f(0.24,0.24,0.24);
+    glColor3f(0.0,0.0,0.0);
     glBegin(GL_LINES);
         glVertex2f(-0.95,0.8);   //white color to toolbar
         glVertex2f(-0.95,-0.2);
@@ -80,7 +80,7 @@ void Elements() {
         glVertex2f(-0.82,0.8);
         glVertex2f(-0.82,-0.2);
     glEnd();
-    glColor3f(0.24,0.24,0.24);
+    glColor3f(0.0,0.0,0.0);
     glBegin(GL_LINES);
         glVertex2f(-0.82,0.8);
         glVertex2f(-0.95,0.8);
@@ -231,9 +231,9 @@ void Elements() {
 
     glColor3f(0.0, 0.0, 0.0);
    
-    drawCircle(-0.855,0.5785,0.022);//draw circle in tool bar
+    drawCircle(-0.8534,0.5785,0.022);//draw circle in tool bar
 
-    glBegin(GL_POINTS);
+    glBegin(GL_POINTS);       //draw dot-dot brush
         double j=0,k=0;
         for (int i=0;i<50;i++) {
             j=rand()%15;
@@ -272,6 +272,77 @@ void Elements() {
     glBegin(GL_LINES);
         glVertex2f(-0.870,0.507);
         glVertex2f(-0.84,0.52);
+    glEnd();
+
+    
+
+
+   
+   
+
+
+
+
+   glColor3f(1,1,1);
+    glBegin(GL_LINES);
+        glVertex2f(-0.885,0.799);   
+        glVertex2f(-0.885,0.44);
+    glEnd();
+
+    glColor3f(0.7,0.7,0.7);
+    glBegin(GL_LINES);
+        glVertex2f(-0.882,0.799);   
+        glVertex2f(-0.882,0.44);
+    glEnd();
+
+
+    glColor3f(1,1,1);
+    glBegin(GL_LINES);
+        glVertex2f(-0.949,0.719);   
+        glVertex2f(-0.82,0.719);
+    glEnd();
+
+    glColor3f(0.7,0.7,0.7);
+    glBegin(GL_LINES);
+        glVertex2f(-0.949,0.714);   
+        glVertex2f(-0.82,0.714);
+    glEnd();
+
+     glColor3f(1,1,1);
+    glBegin(GL_LINES);
+        glVertex2f(-0.949,0.62);   
+        glVertex2f(-0.82,0.62);
+    glEnd();
+
+    glColor3f(0.7,0.7,0.7);
+    glBegin(GL_LINES);
+        glVertex2f(-0.949,0.618);   
+        glVertex2f(-0.82,0.618);
+    glEnd();
+
+
+  glColor3f(1,1,1);
+    glBegin(GL_LINES);
+        glVertex2f(-0.949,0.54);   
+        glVertex2f(-0.82,0.54);
+    glEnd();
+
+    glColor3f(0.7,0.7,0.7);
+    glBegin(GL_LINES);
+        glVertex2f(-0.949,0.538);   
+        glVertex2f(-0.82,0.538);
+    glEnd();
+
+    glColor3f(1,1,1);
+    glBegin(GL_LINES);
+        glVertex2f(-0.949,0.46);   
+        glVertex2f(-0.82,0.46);
+    glEnd();
+
+    glColor3f(0.7,0.7,0.7);
+    glBegin(GL_LINES);
+        glVertex2f(-0.949,0.458);   
+        glVertex2f(-0.82,0.458);
     glEnd();
 
 

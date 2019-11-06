@@ -6,6 +6,7 @@
 #include "mouse.cpp"
 #include "keyboard.cpp"
 #include "draw.cpp"
+#include "menu.cpp"
 
 using namespace std;
 
@@ -33,9 +34,6 @@ void detect_point(GLint num1, GLint num2, int x, int y);
 
 void myReshape(GLsizei w,GLsizei h);
 
-void point_size(int id);
-
-void right(int id);
 
 int main(int argc, char **argv) {
     
@@ -46,7 +44,9 @@ int main(int argc, char **argv) {
     glutInitWindowPosition(100,100);
     glutInitWindowSize(1000,800);
     glutCreateWindow("G-Editor --Wable Sanket--Avinash Yadav--Shubhang Bhagat");
-
+    
+    menu();
+    
     glutDisplayFunc(display);
     glutMouseFunc(myMouse);
     glutKeyboardFunc(keyboard);
