@@ -249,7 +249,6 @@ void Elements() {
 		glVertex2f(-0.849,0.524);
 		glVertex2f(-0.870,0.507);
 	glEnd();
-	glColor3f(0, 0, 0);
 
 	glColor3f(0.9, 0.3, 1);
     glPointSize(4);
@@ -257,17 +256,24 @@ void Elements() {
 		glVertex2f(-0.871,0.50);
 	glEnd();
 
-	glPointSize(2);
+    glColor3f(0.9, 0.3, 1);
+    glPointSize(2);
 	glBegin(GL_POINTS);
-		glVertex2f(-0.87,0.486);
+		glVertex2f(-0.87,0.488);
 	glEnd();
 
-	glPointSize(1);
-
-    glColor3f(0.0,0.0,0.0);
-    glBegin(GL_LINE);
+    glColor3f(0.9, 0.3, 1);
+    glPointSize(1);
+	glBegin(GL_POINTS);
+		glVertex2f(-0.87,0.479);
+	glEnd();
+   glPointSize(1);
+   glColor3f(0.0,0.0,0.0);   
+    glBegin(GL_LINES);
         glVertex2f(-0.870,0.507);
-        glVertex2f(-0.83,0.50);
+        glVertex2f(-0.84,0.52);
     glEnd();
+
+
 
 }

@@ -83,8 +83,8 @@ void Third_page() {
     glClearColor(1.0,1.0,1.0,1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     glDrawBuffer(GL_FRONT);
-    glRasterPos2f(0.0,0.0);
-    glDrawPixels(10,10,GL_RGB,GL_UNSIGNED_BYTE,image);
+   // glRasterPos2f(0.0,0.0);
+   // glDrawPixels(10,10,GL_RGB,GL_UNSIGNED_BYTE,image);
 
     
 
@@ -97,6 +97,6 @@ void Third_page() {
 void display() {
    
 
-    Third_page();
+   First_page();
     
 }
