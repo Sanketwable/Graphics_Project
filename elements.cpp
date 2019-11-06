@@ -1,11 +1,13 @@
+#define PI 3.14
 #include<iostream>
+#include<math.h>
 #include<GL/glut.h>
 
 using namespace std;
 
 extern void setFont(void *font);
 extern void drawstring(float x,float y,float z,const char *string);
-extern void drawCircle(float cx, float cy, float r, int num_segments);
+extern void drawCircle(float cx, float cy, float r);
 
 extern int wh, ww, wx, wy, wx1, wy1;
 
@@ -221,22 +223,51 @@ void Elements() {
 
     glColor3f(1, 1, 1);
 	glBegin(GL_QUADS);                              /* ERASER*/
-		glVertex2f(-0.94,0.61);
-		glVertex2f(-0.90,0.61);
-		glVertex2f(-0.90,0.57);
-		glVertex2f(-0.94,0.57);
+		glVertex2f(-0.94,0.60);
+		glVertex2f(-0.90,0.60);
+		glVertex2f(-0.90,0.56);
+		glVertex2f(-0.94,0.56);
 	glEnd();
 
-      
-      
-    for(int i=0;i<40;i++)					             /* to draw AIR BRUSH OPTION on tool bar */
-				 {
-                     int j=rand()%15;
-					 int k=rand()%15;
-					 glBegin(GL_POINTS);
-					 glVertex2f(-0.92+j,0.59-k);
-					 glEnd();
-                 }
+    glColor3f(0.0, 0.0, 0.0);
+   
+    drawCircle(-0.855,0.5785,0.022);//draw circle in tool bar
 
-    
+    glBegin(GL_POINTS);
+        double j=0,k=0;
+        for (int i=0;i<50;i++) {
+            j=rand()%15;
+            k=rand()%15;
+            glVertex2f(-0.937+j/400,0.485+k/400);
+        }
+        glEnd();
+
+    glColor3f(0.1, 0.7, 0.8);
+	glBegin(GL_QUADS);                               /* to draw COLOUR FILL OPTION on tool bar */
+		glVertex2f(-0.849,0.479);
+		glVertex2f(-0.8289,0.496);
+		glVertex2f(-0.849,0.524);
+		glVertex2f(-0.870,0.507);
+	glEnd();
+	glColor3f(0, 0, 0);
+
+	glColor3f(0.9, 0.3, 1);
+    glPointSize(4);
+	glBegin(GL_POINTS);
+		glVertex2f(-0.871,0.50);
+	glEnd();
+
+	glPointSize(2);
+	glBegin(GL_POINTS);
+		glVertex2f(-0.87,0.486);
+	glEnd();
+
+	glPointSize(1);
+
+    glColor3f(0.0,0.0,0.0);
+    glBegin(GL_LINE);
+        glVertex2f(-0.870,0.507);
+        glVertex2f(-0.83,0.50);
+    glEnd();
+
 }

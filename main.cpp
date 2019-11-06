@@ -25,36 +25,17 @@ void eraser(int x , int y);
 
 void reset();
 
-
-
-
-
-
-
-
-
-
-
 void edgedetect(float x1, float y1, float x2, float y2, int *le, int *re);
 
 void scanfill(GLint num1, GLint num2);
 
 void detect_point(GLint num1, GLint num2, int x, int y);
 
-
-
-
-
 void myReshape(GLsizei w,GLsizei h);
 
 void point_size(int id);
 
 void right(int id);
-
-
-void addBackgroundImage() {
-  
-}
 
 int main(int argc, char **argv) {
     

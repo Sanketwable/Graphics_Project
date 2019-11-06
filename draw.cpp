@@ -9,18 +9,10 @@ using namespace std;
 
 
 
-void drawCircle(float cx, float cy, float r, int num_segments)
-{
-glBegin(GL_LINE_LOOP);
-for(int ii = 0; ii < num_segments; ii++)
-{
-float theta = 2.0f * 3.1415926f * float(ii) / float(num_segments);//get the current angle
+void drawCircle(float cx, float cy, float r){
 
-float x = r * cosf(theta);//calculate the x component
-float y = r * sinf(theta);//calculate the y component
-
-glVertex2f(x + cx, y + cy);//output vertex
-
-}
-glEnd();
+     glBegin(GL_LINE_LOOP);
+        for (float i=0.0;i<2*PI;i=i+0.0006)
+            glVertex2f(cx+r*cos(i),cy+r*sin(i));
+    glEnd();
 }
