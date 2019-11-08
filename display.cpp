@@ -97,6 +97,6 @@ void Third_page() {
 void display() {
    
 
-   First_page();
+   Third_page();
     
 }
