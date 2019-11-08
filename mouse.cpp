@@ -11,6 +11,12 @@ extern void drawCircle(float cx, float cy, float r);
 extern void display();
 
 
+ void showcolorincolorbar(float R,float G, float B) {
+
+    glColor3f(R,G,B);
+    palette(-0.92,-0.90,-0.87,-0.90,-0.87,-0.85,-0.92,-0.85);
+ }
+
 void getpoints(int x, int y) {
 
         cout<<"x="<<x<<"y="<<y<<endl;
@@ -183,83 +189,99 @@ void myMouse(int button, int state, int x, int  y) {
         switch(draw1) {
 
             case 1:
-            glColor3f(0.0,0.0,0.0);
+            glColor3f(0.0,0.0,1.0);
             drawstring(0.8,0.8,0.0,"color1");
+            showcolorincolorbar(0.0,0.0,1);
             glFlush();
             break;
             case 2:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.7,0.7,0.0,"color2");
+            showcolorincolorbar(0,1,1);
             glFlush();
             break;
             case 3:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.6,0.6,0.0,"color3");
+            showcolorincolorbar(1,0,1);
             glFlush();
             break;
             case 4:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.5,0.5,0.0,"color4");
+            showcolorincolorbar(0.5,0.5,1);
             glFlush();
             break;
             case 5:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.4,0.4,0.0,"color5");
+            showcolorincolorbar(0.5,1,0.5);
             glFlush();
             break;
             case 6:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.3,0.3,0.0,"color6");
+            showcolorincolorbar(0.9,0.2,0.3);
             glFlush();
             break;
             case 7:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.2,0.2,0.0,"color7");
+            showcolorincolorbar(0.4,0.4,0.4);
             glFlush();
             break;
             case 8:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.1,0.1,0.0,"color8");
+            showcolorincolorbar(0,0,0);
             glFlush();
             break;
             case 9:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.8,0.8,0.0,"color9");
+            showcolorincolorbar(0.5,0.5,0.5);
             glFlush();
             break;
             case 10:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.7,0.7,0.0,"color10");
+            showcolorincolorbar(1,1,1);
             glFlush();
             break;
             case 11:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.6,0.6,0.0,"color11");
+            showcolorincolorbar(0.4,0.6,0.8);
             glFlush();
             break;
             case 12:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.5,0.5,0.0,"color12");
+            showcolorincolorbar(0.8,0.6,0.4);
             glFlush();
             break;
             case 13:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.4,0.4,0.0,"color13");
+            showcolorincolorbar(1,0.5,1);
             glFlush();
             break;
             case 14:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.3,0.3,0.0,"color14");
+            showcolorincolorbar(0.9,0.7,0.1);
             glFlush();
             break;
             case 15:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.2,0.2,0.0,"color15");
+            showcolorincolorbar(0.6,0.2,0.9);
             glFlush();
             break;
             case 16:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.1,0.1,0.0,"color17");
+            showcolorincolorbar(0.1,0.9,0.4);
             glFlush();
         }
            
