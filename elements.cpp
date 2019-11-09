@@ -347,6 +347,19 @@ void Elements() {
         glVertex2f(-0.82,0.458);
     glEnd();
 
+    glColor3f(1,1,1);
+    palette(0.93,-0.82,0.81,-0.82,0.81,-0.86,0.93,-0.86);
+    glFlush();
+   
+    glColor3f(0,0,0);
+    drawstring(0.83,-0.855,0.0,"Clear");
+     glColor3f(1,0.0,0.0);
+    drawstring(0.835,-0.855,0.0,"Clear");
+     glColor3f(1,0.1,0.1);
+    drawstring(0.833,-0.855,0.0,"Clear");
+    glFlush();
+
+
 
 
 }

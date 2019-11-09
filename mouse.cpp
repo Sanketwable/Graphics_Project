@@ -17,6 +17,15 @@ extern float R,G,B;
 extern int xiline,yiline,drawl;
 
 
+
+void clearFunc() {
+    drawstring(0.0,0.0,0.0,"Sanket");
+    glScissor(105,90,870,655);
+    glEnable(GL_SCISSOR_TEST);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glFlush();
+}
+
  void showcolorincolorbar() {
 
     glColor3f(R,G,B);
@@ -109,6 +118,9 @@ void myMouse(int button, int state, int x, int  y) {
         else if (x>28&&x<58&&y<216&&y>186)//brush
             draw=8;
 
+
+        if (x>906&&x<964&&y>728&&y<744)
+            clearFunc();
 
         switch(mbar) {
             case 1:
