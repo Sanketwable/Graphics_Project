@@ -20,7 +20,7 @@ extern int xiline,yiline,drawl;
 
 void clearFunc() {
     drawstring(0.0,0.0,0.0,"Sanket");
-    glScissor(105,90,870,655);
+    glScissor(105,90,879,655);
     glEnable(GL_SCISSOR_TEST);
     glClear(GL_COLOR_BUFFER_BIT);
     glFlush();
