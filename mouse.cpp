@@ -13,14 +13,16 @@ extern void pencilFunc(int x, int y);
 extern void lineFunc(int x, int y);
 extern void eraserFunc(int x,int y);
 extern void triangleFunc(int x,int y);
+extern void brushFunc(int x, int y);
+extern void circleFunc(int x, int y);
 extern float R,G,B;
 extern int xiline,yiline,drawl;
 
 
 
 void clearFunc() {
-    drawstring(0.0,0.0,0.0,"Sanket");
-    glScissor(105,90,879,655);
+    //drawstring(0.0,0.0,0.0,"Sanket");
+    glScissor(105,84,880,665);
     glEnable(GL_SCISSOR_TEST);
     glClear(GL_COLOR_BUFFER_BIT);
     glFlush();
@@ -194,6 +196,7 @@ void myMouse(int button, int state, int x, int  y) {
             case 6:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.3,0.3,0.0,"circle");
+            circleFunc(x,y);
             glFlush();
             break;
             case 7:
@@ -204,6 +207,7 @@ void myMouse(int button, int state, int x, int  y) {
             case 8:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.1,0.1,0.0,"Brush");
+            brushFunc(x,y);
             glFlush();
 
         }
