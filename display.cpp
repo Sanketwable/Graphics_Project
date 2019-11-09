@@ -79,7 +79,7 @@ void Second_page() {
 
 
 void Third_page() {
-
+    wel=7;
     glClearColor(1.0,1.0,1.0,1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     glDrawBuffer(GL_FRONT);

@@ -6,7 +6,7 @@ using namespace std;
 
 // creating menu
 
-extern int sub_menu,file,edit,view,imagemenu,color,help,sub_menu2;
+extern int sub_menu,file,edit,view,imagemenu,color,help,sub_menu2,size;
 
 
 
