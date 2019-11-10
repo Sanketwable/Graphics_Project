@@ -360,7 +360,7 @@ void Elements() {
     glFlush();
 
     glColor3f(0,0,0);
-    glBegin(GL_LINE_LOOP);                          /* to draw PENCIL OPTION on tool bar */
+    glBegin(GL_LINE_LOOP);                          /* to draw multiplelines OPTION on tool bar */
 		glVertex2f(-0.83, 0.405);
 		glVertex2f(-0.87, 0.405);
 		glVertex2f(-0.87, 0.42);
