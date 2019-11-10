@@ -28,7 +28,7 @@ void palette(float x1, float y1, float x2, float y2, float x3, float y3, float x
 void Elements() {
     wx=wx1;
     wy=wy1;
-    
+
 
     glColor3f(0.85,0.93,1.0);//blue line
     glPointSize(1);
@@ -48,27 +48,27 @@ void Elements() {
 
     glColor3f(0.90, 0.90, 0.90);//grey color for left and bottom
     glRectf(-0.98, -0.96, -0.8,0.94);
-    glRectf(-0.8, -0.96, 0.98, -0.8); 
+    glRectf(-0.8, -0.96, 0.98, -0.8);
 
     glColor3f(0.80, 0.81, 0.80); //grey color for upper
-    glRectf(-0.98,0.95,0.98,0.88);  
+    glRectf(-0.98,0.95,0.98,0.88);
 
     glColor3f(0.45,0.45,0.45);//black-grey line border inside editor
     glRectf(-0.8,-0.8,-0.79,0.88);
-    glRectf(-0.8,-0.8,0.98,0.-0.79);  
+    glRectf(-0.8,-0.8,0.98,0.-0.79);
     glColor3f(0.25,0.25,0.25);
     glRectf(-0.8,0.88,0.98,0.87);
     glColor3f(0.55,0.55,0.55);
-    glRectf(0.97,0.88,0.98,-0.80);   
+    glRectf(0.97,0.88,0.98,-0.80);
 
     glColor3f(0.0,0.0,0.0);//file dit view image color help
     setFont(GLUT_BITMAP_9_BY_15);
     drawstring(-0.91,0.90,0.0,"FILE");
-    drawstring(-0.78,0.90,0.0,"EDIT"); 
-    drawstring(-0.67,0.90,0.0,"VIEW"); 
-    drawstring(-0.54,0.90,0.0,"IMAGE"); 
-    drawstring(-0.40,0.90,0.0,"COLOR"); 
-    drawstring(-0.26 ,0.90,0.0,"HELP");  
+    drawstring(-0.78,0.90,0.0,"EDIT");
+    drawstring(-0.67,0.90,0.0,"VIEW");
+    drawstring(-0.54,0.90,0.0,"IMAGE");
+    drawstring(-0.40,0.90,0.0,"COLOR");
+    drawstring(-0.26 ,0.90,0.0,"HELP");
 
     glColor3f(0.0,0.0,0.0);
     glBegin(GL_LINES);
@@ -93,7 +93,7 @@ void Elements() {
 
 
     glColor3f(0.85, 0.85, 0.85); //box down to tools
-    glRectf(-0.82,-0.30,-0.95,-0.5); 
+    glRectf(-0.82,-0.30,-0.95,-0.5);
 
     glColor3f(0.24, 0.24, 0.24);
     glBegin(GL_LINES);
@@ -157,7 +157,7 @@ void Elements() {
 
 
     glColor3f(0.85, 0.85, 0.85); //current color in color bar
-    glRectf(-0.85,-0.83,-0.94,-0.92); 
+    glRectf(-0.85,-0.83,-0.94,-0.92);
 
     glColor3f(0.24, 0.24, 0.24);
     glBegin(GL_LINES);
@@ -182,10 +182,10 @@ void Elements() {
         glVertex2f(-0.85,-0.92);
     glEnd();
 
-   
+
         glColor3f(0.0,0.0,0.0);
         palette(-0.92,-0.90,-0.87,-0.90,-0.87,-0.85,-0.92,-0.85);
-    
+
 
 
     //Drawing elements in tool bar eg,pen, pencil,triangle,eraser...etc
@@ -196,7 +196,7 @@ void Elements() {
         glVertex2f(-0.90,0.79);
         glVertex2f(-0.94,0.73);
     glEnd();
-    
+
     glBegin(GL_LINE_LOOP);    //triangle
         glVertex2f(-0.87,0.73);
         glVertex2f(-0.83,0.73);
@@ -232,7 +232,7 @@ void Elements() {
 	glEnd();
 
     glColor3f(0.0, 0.0, 0.0);
-   
+
     drawCircle(-0.8534,0.5785,0.022);//draw circle in tool bar
 
     glBegin(GL_POINTS);       //draw dot-dot brush
@@ -270,87 +270,87 @@ void Elements() {
 		glVertex2f(-0.87,0.479);
 	glEnd();
    glPointSize(1);
-   glColor3f(0.0,0.0,0.0);   
+   glColor3f(0.0,0.0,0.0);
     glBegin(GL_LINES);
         glVertex2f(-0.870,0.507);
         glVertex2f(-0.84,0.52);
     glEnd();
 
-    
 
 
-   
-   
+
+
+
 
 
 
 
    glColor3f(1,1,1);
     glBegin(GL_LINES);
-        glVertex2f(-0.885,0.799);   
+        glVertex2f(-0.885,0.799);
         glVertex2f(-0.885,0.44);
     glEnd();
 
     glColor3f(0.7,0.7,0.7);
     glBegin(GL_LINES);
-        glVertex2f(-0.882,0.799);   
+        glVertex2f(-0.882,0.799);
         glVertex2f(-0.882,0.44);
     glEnd();
 
 
     glColor3f(1,1,1);
     glBegin(GL_LINES);
-        glVertex2f(-0.949,0.719);   
+        glVertex2f(-0.949,0.719);
         glVertex2f(-0.82,0.719);
     glEnd();
 
     glColor3f(0.7,0.7,0.7);
     glBegin(GL_LINES);
-        glVertex2f(-0.949,0.714);   
+        glVertex2f(-0.949,0.714);
         glVertex2f(-0.82,0.714);
     glEnd();
 
      glColor3f(1,1,1);
     glBegin(GL_LINES);
-        glVertex2f(-0.949,0.62);   
+        glVertex2f(-0.949,0.62);
         glVertex2f(-0.82,0.62);
     glEnd();
 
     glColor3f(0.7,0.7,0.7);
     glBegin(GL_LINES);
-        glVertex2f(-0.949,0.618);   
+        glVertex2f(-0.949,0.618);
         glVertex2f(-0.82,0.618);
     glEnd();
 
 
   glColor3f(1,1,1);
     glBegin(GL_LINES);
-        glVertex2f(-0.949,0.54);   
+        glVertex2f(-0.949,0.54);
         glVertex2f(-0.82,0.54);
     glEnd();
 
     glColor3f(0.7,0.7,0.7);
     glBegin(GL_LINES);
-        glVertex2f(-0.949,0.538);   
+        glVertex2f(-0.949,0.538);
         glVertex2f(-0.82,0.538);
     glEnd();
 
     glColor3f(1,1,1);
     glBegin(GL_LINES);
-        glVertex2f(-0.949,0.46);   
+        glVertex2f(-0.949,0.46);
         glVertex2f(-0.82,0.46);
     glEnd();
 
     glColor3f(0.7,0.7,0.7);
     glBegin(GL_LINES);
-        glVertex2f(-0.949,0.458);   
+        glVertex2f(-0.949,0.458);
         glVertex2f(-0.82,0.458);
     glEnd();
 
     glColor3f(1,1,1);
     palette(0.93,-0.82,0.81,-0.82,0.81,-0.86,0.93,-0.86);
     glFlush();
-   
+
     glColor3f(0,0,0);
     drawstring(0.83,-0.855,0.0,"Clear");
      glColor3f(1,0.0,0.0);
@@ -358,6 +358,16 @@ void Elements() {
      glColor3f(1,0.1,0.1);
     drawstring(0.833,-0.855,0.0,"Clear");
     glFlush();
+
+    glColor3f(0,0,0);
+    glBegin(GL_LINE_LOOP);                          /* to draw PENCIL OPTION on tool bar */
+		glVertex2f(-0.83, 0.405);
+		glVertex2f(-0.87, 0.405);
+		glVertex2f(-0.87, 0.42);
+		glVertex2f(-0.85, 0.42);
+		glVertex2f(-0.86, 0.44);
+		glVertex2f(-0.84, 0.44);
+	glEnd();
 
 
 
