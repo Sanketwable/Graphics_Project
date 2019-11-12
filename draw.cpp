@@ -1,3 +1,4 @@
+#define PI 3.14
 #include<math.h>
 #include<iostream>
 #include<GL/glut.h>
@@ -14,6 +15,11 @@ struct Color {
     float g;
     float b;
 };
+Color getPixelColor(GLint x, GLint y) {
+	Color color;
+	glReadPixels(x, y, 1, 1, GL_RGB, GL_FLOAT, &color);
+	return color;
+}
 void reset() {
     xiline=0;
     yiline=0;
@@ -25,6 +31,17 @@ void drawCircle(float cx, float cy, float r){
      glColor3f(R,G,B);
      glPointSize(2);
      glBegin(GL_LINE_LOOP);
+        for (float i=0.0;i<2*PI;i=i+0.0006)
+        {
+            glVertex2f(cx+r*cos(i),cy+r*sin(i));
+        }
+    glEnd();
+}
+void drawCircle1234(float cx, float cy, float r){
+
+     glColor3f(0.0,0.0,0.0);
+     glPointSize(4);
+     glBegin(GL_POINTS);
         for (float i=0.0;i<2*PI;i=i+0.0006)
         {
             glVertex2f(cx+r*cos(i),cy+r*sin(i));
@@ -172,21 +189,27 @@ void Draw_rectangle(int x,int y) {
     }
     glFlush();
 }
-void Fill_color(int x, int y, float oldcolor[],float newcolor[]) {
+void Fill_color(int x, int y,float newcolor[]) {
+     float oldcolor[3];
+        glReadPixels(x, y, 1, 1, GL_RGB, GL_FLOAT, oldcolor);
 
 	if(x>Drawx1&&x<Drawx2&&y>Drawy1&&y<Drawy2) {
-        glReadPixels(x,y,1,1,GL_RGB,GL_UNSIGNED_BYTE,&newcolor);
-        if(newcolor[0] == oldcolor[0] && newcolor[1] == oldcolor[1] && newcolor[2] == oldcolor[2]) {
+        glReadPixels(x,y,1,1,GL_RGB,GL_UNSIGNED_BYTE,newcolor);
+        cout<<newcolor[0]<<endl;
+       // cout<<oldcolor[0]<<endl;
+        if(newcolor[0] == oldcolor[0] && newcolor[1] == oldcolor[1] && newcolor[2] == oldcolor[2]) 
+        {
 		
             glColor3f(R,G,B);
-	        glBegin(GL_POINT);
-	            glVertex2f((500-x)/500.0, (400-y)/400.0);
-	        glEnd();
+            glPointSize(4);
+	        glBegin(GL_POINTS);
+                glVertex2f((x-500)/500.0,(400-y)/400.0);
+                glEnd();
 	        glFlush();
-		    Fill_color(x+1, y, oldcolor, newcolor);
-		    Fill_color(x, y+1, oldcolor, newcolor);
-		    Fill_color(x-1, y, oldcolor, newcolor);
-		    Fill_color(x, y-1, oldcolor, newcolor);
+		    Fill_color(x+1, y, oldcolor);
+		    Fill_color(x, y+1, oldcolor );
+		    Fill_color(x-1, y, oldcolor );
+		    Fill_color(x, y-1, oldcolor);
 	    }
 
 
@@ -226,10 +249,10 @@ void rectangleFunc(int x, int y) {
     Draw_rectangle(x,y);
 }
 void fillcolorFunc(int x, int y) {
-    Color oldcolor;
-    Color newcolor;
-    glReadPixels(x,y,1,1,GL_RGB,GL_UNSIGNED_BYTE,&oldcolor);
-    Fill_color(x,y,&oldcolor,&newcolor);
+  
+  // cout<<"old color="<<oldcolor[0]<<oldcolor[1]<<oldcolor[2]<<endl;
+   float newcolor[3]={R,G,B};
+   Fill_color(x,y,newcolor);
 
     
 

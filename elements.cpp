@@ -8,7 +8,7 @@ using namespace std;
 extern void setFont(void *font);
 extern void drawstring(float x,float y,float z,const char *string);
 extern void drawCircle(float cx, float cy, float r);
-
+extern void drawCircle1234(float cx, float cy, float r);
 extern int wh, ww, wx, wy, wx1, wy1;
 
 
@@ -380,6 +380,10 @@ void Elements() {
 		glVertex2f(-0.86, 0.44);
 		glVertex2f(-0.84, 0.44);
 	glEnd();
+
+    glPointSize(4);
+    glColor3f(0.0,0.0,0.0);
+        drawCircle1234(-0.918,0.419,0.022);
 
 
 
