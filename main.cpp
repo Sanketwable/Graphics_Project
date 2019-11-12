@@ -36,7 +36,7 @@ int main(int argc, char **argv) {
     glutInitDisplayMode(GLUT_SINGLE| GLUT_RGB);
     glutInitWindowPosition(100,100);
     glutInitWindowSize(1000,800);
-    glutCreateWindow("G-Editor --Wable Sanket--Avinash Yadav--Shubhang Bhagat");
+    glutCreateWindow("G-Editor");
     
     menu();
     
