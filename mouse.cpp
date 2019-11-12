@@ -15,6 +15,8 @@ extern void eraserFunc(int x,int y);
 extern void triangleFunc(int x,int y);
 extern void brushFunc(int x, int y);
 extern void circleFunc(int x, int y);
+extern void rectangleFunc(int x, int y);
+extern void fillcolorFunc(int x, int y);
 extern float R,G,B;
 extern int xiline,yiline,drawl;
 
@@ -178,6 +180,7 @@ void myMouse(int button, int state, int x, int  y) {
             case 3:
             glColor3f(0.0,0.0,0.0);
             drawstring(0.6,0.6,0.0,"rectangle");
+            rectangleFunc(x,y);
             glFlush();
             break;
             case 4:
@@ -201,6 +204,7 @@ void myMouse(int button, int state, int x, int  y) {
             break;
             case 7:
             glColor3f(0.0,0.0,0.0);
+            fillcolorFunc(x,y);
             drawstring(0.2,0.2,0.0,"colorfill");
             glFlush();
             break;

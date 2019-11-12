@@ -9,6 +9,11 @@ extern int size,Drawx1,Drawx2,Drawy1,Drawy2;
 extern float R,G,B;
 
 
+struct Color {
+    float r;
+    float g;
+    float b;
+};
 void reset() {
     xiline=0;
     yiline=0;
@@ -81,6 +86,7 @@ void Draw_line(int x, int y) {
 void Draw_brush(int x,int y) {
     glColor3f(R,G,B);
     glPointSize(1);
+    float x123=x,y123=y;
 	if(x>Drawx1&&x<Drawx2&&y>Drawy1&&y<Drawy2)
     {
         for (int i=0;i<40;i++) {
@@ -149,6 +155,45 @@ void Draw_circle(int x, int y) {
 
     }
 }
+void Draw_rectangle(int x,int y) {
+    drawpoint(x,y);
+    if (drawl==0) {
+        a1=x;b1=y;drawl++;
+    }
+    else if (drawl==1) {
+        glColor3f(R,G,B);
+        glBegin(GL_LINE_LOOP);
+            glVertex2f((a1-500)/500.0,(400-b1)/400.0);
+            glVertex2f((x-500)/500.0,(400-b1)/400.0);
+            glVertex2f((x-500)/500.0,(400-y)/400.0);
+            glVertex2f((a1-500)/500.0,(400-y)/400.0);
+        glEnd();
+        reset();
+    }
+    glFlush();
+}
+void Fill_color(int x, int y, float oldcolor[],float newcolor[]) {
+
+	if(x>Drawx1&&x<Drawx2&&y>Drawy1&&y<Drawy2) {
+        glReadPixels(x,y,1,1,GL_RGB,GL_UNSIGNED_BYTE,&newcolor);
+        if(newcolor[0] == oldcolor[0] && newcolor[1] == oldcolor[1] && newcolor[2] == oldcolor[2]) {
+		
+            glColor3f(R,G,B);
+	        glBegin(GL_POINT);
+	            glVertex2f((500-x)/500.0, (400-y)/400.0);
+	        glEnd();
+	        glFlush();
+		    Fill_color(x+1, y, oldcolor, newcolor);
+		    Fill_color(x, y+1, oldcolor, newcolor);
+		    Fill_color(x-1, y, oldcolor, newcolor);
+		    Fill_color(x, y-1, oldcolor, newcolor);
+	    }
+
+
+    }
+
+
+}
 void pencilFunc(int x , int y) {
 
 	if(x>Drawx1&&x<Drawx2&&y>Drawy1&&y<Drawy2)
@@ -175,4 +220,18 @@ void brushFunc(int x, int y) {
 void circleFunc(int x, int y) {
     if(x>Drawx1&&x<Drawx2&&y>Drawy1&&y<Drawy2)
     Draw_circle(x,y);
+}
+void rectangleFunc(int x, int y) {
+    if(x>Drawx1&&x<Drawx2&&y>Drawy1&&y<Drawy2)
+    Draw_rectangle(x,y);
+}
+void fillcolorFunc(int x, int y) {
+    Color oldcolor;
+    Color newcolor;
+    glReadPixels(x,y,1,1,GL_RGB,GL_UNSIGNED_BYTE,&oldcolor);
+    Fill_color(x,y,&oldcolor,&newcolor);
+
+    
+
+
 }
