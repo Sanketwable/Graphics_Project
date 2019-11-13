@@ -11,23 +11,6 @@
 using namespace std;
 
 
-
-
-FILE *fptr;
-char fname[20];
-
-
-void paint(int x,int y);
-
-void edgedetect(float x1, float y1, float x2, float y2, int *le, int *re);
-
-void scanfill(GLint num1, GLint num2);
-
-void detect_point(GLint num1, GLint num2, int x, int y);
-
-void myReshape(GLsizei w,GLsizei h);
-
-
 int main(int argc, char **argv) {
     
     image = new char[3*1450*900*sizeof(char)];

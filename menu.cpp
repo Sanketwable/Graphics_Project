@@ -37,20 +37,10 @@ void right(int id) /* to QUIT the editor */
 		exit(0);
 }
 
-void fucking(int id) {
-    if (id==7)
-    exit(0);
-}
-void kika(int id) {
-    int parrot=id;
-}
 void menu() {
 sub_menu=glutCreateMenu(point_size);
 glutAddMenuEntry("increase",1);
 glutAddMenuEntry("decrease",2);
-
-sub_menu2=glutCreateMenu(fucking);
-glutAddMenuEntry("sanket",1);
 
 glutCreateMenu(right);
 glutAddSubMenu("Point size",sub_menu);
