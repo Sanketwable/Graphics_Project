@@ -1,5 +1,5 @@
 # Graphics_Project
-Graphics Editor similar to (paint)
+Graphics Editor ......similar to paint in Windows
 # Requirements
  1. Frameworks - 
  
