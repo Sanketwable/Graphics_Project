@@ -3,7 +3,7 @@ Graphics Editor ......similar to paint in Windows
 # Requirements
  1. Frameworks -- 
  
-                1.OpenGL framework
+                1.OpenGL Framework
                 2.Glut Framework
                 
 
