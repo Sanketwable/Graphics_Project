@@ -1,4 +1,7 @@
 # Graphics_Project
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 Graphics Editor ......similar to paint in Windows
 # Requirements
  1. Frameworks -- 
@@ -34,3 +37,22 @@ link for download https://www.khronos.org/opengl/wiki/Getting_Started#Downloadin
 <p align="center">
   <img src="https://github.com/Sanketwable/Graphics_Project/blob/master/Images/thirdpage.png" width="600" title="hover text">
 </p>
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://wablesanket.xyz"><img src="https://avatars0.githubusercontent.com/u/43716242?v=4" width="100px;" alt=""/><br /><sub><b>Wable Sanket</b></sub></a><br /><a href="#infra-Sanketwable" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Sanketwable/Graphics_Project/commits?author=Sanketwable" title="Tests">⚠️</a> <a href="https://github.com/Sanketwable/Graphics_Project/commits?author=Sanketwable" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
