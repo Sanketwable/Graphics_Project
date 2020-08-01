@@ -49,7 +49,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://wablesanket.xyz"><img src="https://avatars0.githubusercontent.com/u/43716242?v=4" width="100px;" alt=""/><br /><sub><b>Wable Sanket</b></sub></a><br /><a href="#infra-Sanketwable" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Sanketwable/Graphics_Project/commits?author=Sanketwable" title="Tests">⚠️</a> <a href="https://github.com/Sanketwable/Graphics_Project/commits?author=Sanketwable" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Sachinwattamwar"><img src="https://avatars3.githubusercontent.com/u/43489632?v=4" width="100px;" alt=""/><br /><sub><b>Sachin Wattamwar</b></sub></a><br /><a href="#infra-Sachinwattamwar" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Sanketwable/Graphics_Project/commits?author=Sachinwattamwar" title="Tests">⚠️</a> <a href="https://github.com/Sanketwable/Graphics_Project/commits?author=Sachinwattamwar" title="Code">💻</a></td>
-
+    <td align="center"><a href="https://github.com/shubhang60"><img src="https://avatars1.githubusercontent.com/u/56973512?v=4" width="100px;" alt=""/><br /><sub><b>Shubhang</b></sub></a><br /><a href="#infra-shubhang60" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Sanketwable/Graphics_Project/commits?author=shubhang60" title="Tests">⚠️</a> <a href="https://github.com/Sanketwable/Graphics_Project/commits?author=shubhang60" title="Code">💻</a></td>
   </tr>
 </table>
 
