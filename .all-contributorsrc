@@ -28,10 +28,7 @@
       ]
     },
     {
-      "login": "ankit2001",
-      "name": "Ankit Choudhary",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/44541855?v=4",
-      "profile": "https://github.com/ankit2001",
+
       "contributions": [
         "infra",
         "test",
