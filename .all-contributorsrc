@@ -28,10 +28,17 @@
       ]
     },
     {
+<<<<<<< HEAD
       "login": "shubhang60",
       "name": "Shubhang",
       "avatar_url": "https://avatars1.githubusercontent.com/u/56973512?v=4",
       "profile": "https://github.com/shubhang60",
+=======
+      "login": "ankit2001",
+      "name": "Ankit Choudhary",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/44541855?v=4",
+      "profile": "https://github.com/ankit2001",
+>>>>>>> parent of bcf1acb... Merge pull request #13 from Sanketwable/all-contributors/add-AvinashYadav58
       "contributions": [
         "infra",
         "test",
