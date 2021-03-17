@@ -1,5 +1,8 @@
 # Graphics_Project
 Graphics Editor ......similar to paint in Windows
+
+
+`g++ -framework OpenGL -framework GLUT main.cpp -o main -Wno-deprecated`
 # Requirements
  1. Frameworks -- 
  
